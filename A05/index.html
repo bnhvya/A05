@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Old Time Circus Carousel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="circus-shell">
+    <h1 class="title">Carousel Music Box</h1>
+
+    <section class="text-display" aria-label="Circus marquee text">
+      <p id="marqueeText">Act 1: Snufflepuff twirli-boo, lil lion moon!</p>
+    </section>
+
+    <section class="carousel" aria-label="Circus image carousel">
+      <button id="prevBtn" class="nav" aria-label="Previous image">&#10094;</button>
+      <div class="frame">
+        <div class="crown" aria-hidden="true"></div>
+        <img id="carouselImage" src="animals/animal_00.png" alt="Circus animal" />
+        <p id="slideCounter" class="counter">1 / 50</p>
+      </div>
+      <button id="nextBtn" class="nav" aria-label="Next image">&#10095;</button>
+    </section>
+
+    <audio id="circusAudio" src="sounds/animal_sound.wav" loop controls></audio>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
